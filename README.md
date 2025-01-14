@@ -1,29 +1,8 @@
 # yingshi-7.github.io
 
-This template should help get you started developing with Vue 3 in Vite.
+This is my personal blog written in vue, the function is still in the process of improvement, temporarily for display.
+这是我用vue写的个人博客，功能还在完善中，暂作展示。
 
-## Recommended IDE Setup
+# entrance
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+https://yingshi-7.github.io
