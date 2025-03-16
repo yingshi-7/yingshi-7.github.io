@@ -41,3 +41,19 @@ body{
 ::-webkit-scrollbar-corner {
   background: transparent; /* 滚动条与容器交汇处的背景颜色设置为透明 */
 }
+
+
+/* 自定义字体 */
+@font-face {
+  // logo字体
+  font-family: 'ZhiMangXing';
+  src: url('./fonts/ZhiMangXing-Regular.ttf')format('truetype');
+  font-display: swap; /* 字体加载策略，在没加载时统一使用默认字体 */
+}
+
+@font-face {
+  // 内容字体
+  font-family: 'PatuaOne';
+  src: url('./fonts/PatuaOne-Regular.ttf')format('truetype');
+  font-display: swap;
+}

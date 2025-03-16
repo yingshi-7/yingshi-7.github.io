@@ -29,9 +29,9 @@
               <div class="content-item">YINGSHI</div>
             </div>
           </div>
-          <div class="content-desc">座右铭123</div>
+          <div class="content-desc">清醒时做事，迷茫时读书</div>
         </div>
-        <img class="pull-down" src="../../assets/pull-down.png" alt="下拉">
+        <img class="pull-down" src="@/assets/pull-down.png" alt="下拉">
       </div>
     </div>
     <div class="second-page" id="second-page">
@@ -40,7 +40,7 @@
         <div class="content-container">
           <div class="content-item" v-for="item in 2">
             <div class="item-box">
-              <img src="../../assets/favicon-32x32.png" alt="">
+              <img src="@/assets/favicon-32x32.png" alt="">
               <span @click="$router.push('/blog')" style="cursor: pointer;">记录在线</span>
             </div>
             <p>一个关于自己的blog，记录生活和学习的点滴。</p>
@@ -53,18 +53,6 @@
 </template>
 
 <style lang="scss">
-@font-face {
-  // logo字体
-  font-family: 'ZhiMangXing';
-  src: url('../../assets/fonts/ZhiMangXing-Regular.ttf')format('truetype');
-}
-
-@font-face {
-  // 内容字体
-  font-family: 'PatuaOne';
-  src: url('../../assets/fonts/PatuaOne-Regular.ttf')format('truetype');
-}
-
 .home-page {
   height: 100vh;
   /* 让页面高度填满视口 */
