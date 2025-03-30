@@ -38,11 +38,11 @@
       <h2>About me.</h2>
       <div class="second-page-content">
         <div class="content-container">
-          <div class="content-item" v-for="item in 2">
-            <div class="item-box">
+          <div class="second-item" v-for="item in 2">
+            <a href="/blog" class="item-box">
               <img src="@/assets/favicon-32x32.png" alt="">
-              <span @click="$router.push('/blog')" style="cursor: pointer;">记录在线</span>
-            </div>
+              <span>记录在线</span>
+            </a>
             <p>一个关于自己的blog，记录生活和学习的点滴。</p>
           </div>
         </div>
@@ -188,7 +188,7 @@
     max-width: 1300px;
     margin: 0 auto;
 
-      .content-item {
+      .second-item {
         background-color: #fff;
         border-radius: 15px;
         width: calc(25% - 3vw); // 响应式宽度
@@ -202,12 +202,21 @@
           height: 50%;
           display: flex;
           align-items: center;
+          text-decoration: none;
 
           span{
             margin-left: 1rem;
             font-weight: 600;
             font-size: clamp(14px, 1.5vw, 20px);
+            color: #333;
           }
+        }
+
+        .item-box:hover{
+          background-image:linear-gradient(-225deg,#2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
 
         p{

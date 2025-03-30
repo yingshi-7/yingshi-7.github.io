@@ -1,10 +1,10 @@
-<!-- footer -->
+<!-- DOCTYPE.vue -->
 <script setup>
 
 </script>
 
 <template>
-  <h1>Hello vue3 + sts, this is footer</h1>
+  <h1>this is DOCTYPE.vue</h1>
 </template>
 
 <style scoped>
