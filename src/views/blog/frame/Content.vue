@@ -4,9 +4,11 @@
 </script>
 
 <template>
-  <router-view></router-view>
+  <router-view class="content"></router-view>
 </template>
 
 <style scoped>
-
+.content {
+  margin: 0 4.5rem;
+}
 </style>

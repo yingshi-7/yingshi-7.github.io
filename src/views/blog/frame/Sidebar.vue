@@ -4,25 +4,47 @@ const navItems = ref([
   {
     title: "HTML",
     isExpanded: false,
-    subItems: [
-      { title: "HTML1", name: "html-1" },
-      { title: "HTML2", name: "html-2" },
-    ],
+    subItems: [{ title: "DOCTYPE", name: "html-1" }],
   },
   {
     title: "css",
     isExpanded: false,
-    subItems: [{ title: "开发者模式1" }, { title: "css2" }, { title: "css3" }],
+    subItems: [],
   },
   {
     title: "javascript",
     isExpanded: false,
-    subItems: [
-      { title: "javascript1" },
-      { title: "javascript2" },
-      { title: "javascript3" },
-      { title: "javascript4" },
-    ],
+    subItems: [],
+  },
+  {
+    title: "Browser",
+    isExpanded: false,
+    subItems: [],
+  },
+  {
+    title: "Vue",
+    isExpanded: false,
+    subItems: [],
+  },
+  {
+    title: "React",
+    isExpanded: false,
+    subItems: [],
+  },
+  {
+    title: "Java",
+    isExpanded: false,
+    subItems: [],
+  },
+  {
+    title: "LeetCode",
+    isExpanded: false,
+    subItems: [],
+  },
+  {
+    title: "MyLift",
+    isExpanded: false,
+    subItems: [],
   },
 ]);
 

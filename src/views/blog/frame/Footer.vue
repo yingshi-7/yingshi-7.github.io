@@ -1,12 +1,11 @@
 <!-- footer -->
 <script setup>
-
+import FooterText from '@/components/FooterText.vue';
 </script>
 
 <template>
-  <h1>Hello vue3 + sts, this is footer</h1>
+  <FooterText></FooterText>
 </template>
 
 <style scoped>
-
 </style>

@@ -15,6 +15,10 @@ const routes = [
     name: "blog",
     children: [
       {
+        path: '',
+        component: () => import("@/views/blog/contents/index.vue")
+      },
+      {
         path: "html",
         children: [
           {

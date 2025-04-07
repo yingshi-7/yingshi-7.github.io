@@ -24,5 +24,7 @@ import Footer from './frame/Footer.vue'
   width: 20vw;
   min-width: 15rem;
 }
-
+.content-wrapper{
+  flex:1
+}
 </style>

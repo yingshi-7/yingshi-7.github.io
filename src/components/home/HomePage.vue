@@ -150,6 +150,7 @@
     right: 50%;
     bottom: 10%;
     transform: translate(50%, 0);
+    z-index:1;
   }
 }
 
