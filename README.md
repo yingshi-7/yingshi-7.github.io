@@ -1,6 +1,6 @@
 # [yingshi-7.github.io](https://yingshi-7.github.io/)
 
-个人网站（包含博客）
+这是我自己搭建的一个个人网站（包含博客）
 
 ## Recommended IDE Setup
 

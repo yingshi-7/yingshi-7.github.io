@@ -1,5 +1,20 @@
 <!-- blog首页 -->
-<script setup></script>
+<script setup>
+import { onMounted,nextTick } from "vue";
+import hljs from "highlight.js/lib/core";
+
+const highlightElement = (el) => {
+  hljs.highlightElement(el)
+}
+onMounted(async () => {
+  // 使用nextTick确保DOM已经更新
+  await nextTick();
+  // 获取所有代码块，并高亮
+  document.querySelectorAll("pre code").forEach((block) => {
+    highlightElement(block)
+  })
+});
+</script>
 
 <template>
   <div>
@@ -45,12 +60,31 @@
     </p>
     <br />
     <h2 class="blog-h2">Hello, World:</h2>
+    <details>
+      <summary class="code-header">
+        <div class="window-controls">
+          <span class="window-btn red"></span>
+          <span class="window-btn yellow"></span>
+          <span class="window-btn green"></span>
+        </div>
+        <div>
+          <span>html</span>
+          <span>复制代码</span>
+          <span></span>
+        </div>
+      </summary>
+        <pre><code class="language-html">
+          &lt;div&gt;Hello World&lt;/div&gt;
+          &lt;div&gt;Hello World&lt;/div&gt;
+        </code></pre>
+    </details>
   </div>
 </template>
 
 <style scoped>
 * {
   color: #3f4a54;
+  /* color: #fff; */
 }
 .blog-p {
   line-height: 1.75rem;
@@ -84,4 +118,40 @@
 .blog-li {
   line-height: 1.75rem;
 }
+
+/* 添加highlight.js相关样式 */
+:deep(.language-html) {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: #0005 0 2px 2px;
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2d333b;
+  padding: 8px 16px;
+  color: #adbac7;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.window-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.window-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
 </style>

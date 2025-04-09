@@ -1,6 +1,6 @@
 <!-- footer -->
 <script setup>
-import FooterText from '@/components/FooterText.vue';
+import FooterText from '@/views/blog/unit/FooterText.vue';
 </script>
 
 <template>
